@@ -30,7 +30,7 @@ const questions = [
   },
 ];
 
-// Display the quiz questions and choices
+// Select DOM elements
 const questionsElement = document.getElementById("questions");
 const submitButton = document.getElementById("submit");
 const scoreDisplay = document.getElementById("score");
@@ -118,4 +118,5 @@ submitButton.addEventListener("click", () => {
   localStorage.setItem("score", score); // Save score in local storage
 });
 
+// Render questions on page load
 renderQuestions();
